@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,11 +10,13 @@
 <style>
 
 :root{
+
 --deep-navy:#223D52;
 --warm-gold:#D4A373;
 --deep-tide:#708699;
 --cloud-grey:#D9E0E6;
 --off-white:#F8F6F2;
+
 }
 
 *{
@@ -27,146 +30,262 @@ scroll-behavior:smooth;
 }
 
 body{
-font-family:"Segoe UI",Arial,sans-serif;
+
+font-family:
+"Segoe UI",
+Arial,
+sans-serif;
+
 background:var(--off-white);
+
 color:var(--deep-navy);
+
 line-height:1.8;
+
 }
 
 nav{
+
 background:white;
-padding:18px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-position:sticky;
-top:0;
-z-index:100;
+
 border-bottom:1px solid var(--cloud-grey);
+
+padding:18px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+position:sticky;
+
+top:0;
+
+z-index:100;
+
 }
 
 .logo{
-font-size:1.15rem;
+
+font-size:1.1rem;
+
 font-weight:700;
+
 letter-spacing:1px;
+
 }
 
 .menu{
+
 display:flex;
+
 gap:30px;
+
 }
 
 .menu a{
+
 text-decoration:none;
+
 color:var(--deep-navy);
+
 font-size:.95rem;
+
 }
 
 .hero{
-min-height:80vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:40px;
+
+min-height:90vh;
+
 background:var(--deep-navy);
+
 color:white;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:40px;
+
 }
 
 .hero h1{
-font-size:4rem;
+
+font-size:4.5rem;
+
 margin-bottom:20px;
+
 }
 
 .gold-line{
-width:90px;
+
+width:100px;
+
 height:4px;
+
 background:var(--warm-gold);
-margin:20px auto 35px;
+
+margin:25px auto 35px;
+
 border-radius:10px;
+
 }
 
 .hero p{
-max-width:850px;
-font-size:1.25rem;
+
+font-size:1.3rem;
+
+max-width:900px;
+
 line-height:2;
+
 }
 
 .section{
-max-width:1200px;
+
+max-width:1100px;
+
 margin:auto;
-padding:90px 25px;
+
+padding:100px 25px;
+
 }
 
 .section-title{
+
 text-align:center;
+
 font-size:2rem;
-margin-bottom:50px;
+
+margin-bottom:60px;
+
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
+.philosophy{
 
-.card{
-background:white;
-padding:35px;
-border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,.05);
-transition:.3s;
-}
+text-align:center;
 
-.card:hover{
-transform:translateY(-5px);
-}
+max-width:850px;
 
-.card h3{
-margin-bottom:18px;
-}
+margin:auto;
 
-.card p{
+font-size:1.1rem;
+
 color:var(--deep-tide);
+
+}
+
+.flow{
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+.flow-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:20px;
+
+margin-bottom:25px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+text-align:center;
+
+}
+
+.flow-card h3{
+
+margin-bottom:10px;
+
+}
+
+.flow-card p{
+
+color:var(--deep-tide);
+
+}
+
+.arrow{
+
+text-align:center;
+
+font-size:2rem;
+
+color:var(--warm-gold);
+
+margin-bottom:20px;
+
 }
 
 .about-box{
+
 background:white;
-padding:45px;
+
+padding:50px;
+
 border-radius:20px;
+
 box-shadow:0 10px 25px rgba(0,0,0,.05);
+
 max-width:900px;
+
 margin:auto;
+
 text-align:center;
+
 }
 
 footer{
+
 background:var(--deep-navy);
+
 color:white;
+
+padding:50px;
+
 text-align:center;
-padding:50px 20px;
-margin-top:80px;
+
+margin-top:100px;
+
 }
 
 @media(max-width:768px){
 
 .hero h1{
-font-size:2.5rem;
-}
 
-.menu{
-gap:15px;
-font-size:.8rem;
+font-size:2.7rem;
+
 }
 
 .hero p{
+
 font-size:1rem;
+
+}
+
+.menu{
+
+gap:15px;
+
 }
 
 }
 
 </style>
+
 </head>
 
 <body>
@@ -178,10 +297,15 @@ FON ECOSYSTEM
 </div>
 
 <div class="menu">
+
 <a href="#home">Home</a>
+
 <a href="#ecosystem">Ecosystem</a>
+
 <a href="#about">About</a>
+
 <a href="#contact">Contact</a>
+
 </div>
 
 </nav>
@@ -193,67 +317,123 @@ FON ECOSYSTEM
 <div class="gold-line"></div>
 
 <p>
+
 Understanding life,<br>
-nature, health, and land<br>
+
+nature, land, and health<br>
+
 through knowledge and awareness.
+
 </p>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+
+Philosophy
+
+</h2>
+
+<div class="philosophy">
+
+FON ECOSYSTEM is a knowledge-driven ecosystem dedicated to understanding life, nature, land, and health.
+
+Through observation, awareness, and long-term thinking, we explore different dimensions of the world while remaining grounded in reality.
+
+</div>
 
 </section>
 
 <section class="section" id="ecosystem">
 
 <h2 class="section-title">
+
 Our Ecosystem
+
 </h2>
 
-<div class="grid">
+<div class="flow">
 
-<div class="card">
+<div class="flow-card">
 
 <h3>LAFO LIFE</h3>
 
 <p>
-Understanding life through<br>
-simplicity, nature,<br>
+
+Understanding life through
+
+simplicity,
+
+nature,
+
 and awareness.
+
 </p>
 
 </div>
 
-<div class="card">
+<div class="arrow">↓</div>
+
+<div class="flow-card">
 
 <h3>LAFO FARMERY</h3>
 
 <p>
-Understanding nature through<br>
-food, herbs,<br>
+
+Understanding nature through
+
+food,
+
+herbs,
+
 and agriculture.
+
 </p>
 
 </div>
 
-<div class="card">
+<div class="arrow">↓</div>
+
+<div class="flow-card">
 
 <h3>NOF ASSET</h3>
 
 <p>
-Understanding land through<br>
-geopolitics, economics,<br>
-policy, society,<br>
+
+Understanding land through
+
+geopolitics,
+
+economics,
+
+policy,
+
+society,
+
 and long-term trends.
+
 </p>
 
 </div>
 
-<div class="card">
+<div class="arrow">↓</div>
+
+<div class="flow-card">
 
 <h3>NOF THAIMED</h3>
 
 <p>
-Understanding health through<br>
-Thai wisdom,<br>
-local knowledge,<br>
+
+Understanding health through
+
+Thai wisdom,
+
+local knowledge,
+
 and everyday living.
+
 </p>
 
 </div>
@@ -265,25 +445,31 @@ and everyday living.
 <section class="section" id="about">
 
 <h2 class="section-title">
+
 About
+
 </h2>
 
 <div class="about-box">
 
 <p>
-FON ECOSYSTEM is a knowledge-driven ecosystem
-dedicated to understanding life,
-nature, health, and land.
+
+Life.
+
+Nature.
+
+Land.
+
+Health.
+
 </p>
 
 <br>
 
 <p>
-Through LAFO LIFE, LAFO FARMERY,
-NOF THAIMED, and NOF ASSET,
-we explore different dimensions of the world
-while remaining grounded in awareness,
-understanding, and long-term thinking.
+
+Four dimensions of understanding connected through one ecosystem.
+
 </p>
 
 </div>
@@ -293,13 +479,17 @@ understanding, and long-term thinking.
 <section class="section" id="contact">
 
 <h2 class="section-title">
+
 Contact
+
 </h2>
 
 <div class="about-box">
 
 <p>
-Knowledge • Nature • Health • Land
+
+Knowledge • Awareness • Understanding
+
 </p>
 
 </div>
@@ -309,10 +499,13 @@ Knowledge • Nature • Health • Land
 <footer>
 
 <p>
+
 © 2026 FON ECOSYSTEM
+
 </p>
 
 </footer>
 
 </body>
+
 </html>
