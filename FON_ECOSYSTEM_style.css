@@ -1,0 +1,107 @@
+
+:root{
+--navy:#223D52;
+--gold:#D4A373;
+--off:#F8F6F2;
+--grey:#708699;
+}
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:Georgia,serif;
+background:var(--off);
+color:var(--navy);
+}
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:24px 60px;
+background:#fff;
+}
+.logo div{font-size:52px}
+.logo span{letter-spacing:4px}
+nav a{
+margin-left:24px;
+text-decoration:none;
+color:var(--navy);
+font-family:Arial,sans-serif;
+font-size:14px;
+}
+.hero{
+height:720px;
+background:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600') center/cover;
+position:relative;
+display:flex;
+align-items:center;
+}
+.overlay{
+position:absolute;inset:0;
+background:linear-gradient(to right,rgba(248,246,242,.95),rgba(248,246,242,.15));
+}
+.hero-content{
+position:relative;
+max-width:650px;
+padding-left:80px;
+}
+.hero h1{font-size:96px;line-height:.9;margin:0}
+.hero h2{color:var(--gold);font-size:42px;font-weight:400}
+.hero p{font-size:28px;max-width:550px}
+.tags{color:var(--gold);margin:20px 0}
+.btn{
+padding:14px 22px;
+display:inline-block;
+margin-right:10px;
+border-radius:4px;
+}
+.gold{background:var(--gold);color:#fff}
+.outline{border:1px solid var(--navy)}
+.section{padding:80px 6%}
+.section h2{text-align:center}
+.cards{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+.card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 4px 18px rgba(0,0,0,.08);
+min-height:260px;
+}
+.philosophy{
+padding:80px;
+background:#efe6d7;
+}
+.knowledge{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:15px;
+}
+.knowledge div,.project-image,.media,.project-list{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,.06);
+text-align:center;
+}
+.projects{
+display:grid;
+grid-template-columns:1fr 2fr 1fr;
+gap:20px;
+padding:0 6% 80px;
+}
+footer{
+background:var(--navy);
+color:white;
+display:flex;
+justify-content:space-around;
+padding:40px;
+}
+@media(max-width:900px){
+.cards,.knowledge,.projects{grid-template-columns:1fr}
+.navbar{flex-direction:column}
+.hero h1{font-size:60px}
+.hero h2{font-size:30px}
+}
